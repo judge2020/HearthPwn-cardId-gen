@@ -19,7 +19,7 @@ for hs_class in hs_classes:
   # don't just hammer the site
   time.sleep(1)
 print('Dumping card map')
-with open('hearthpwn-card-map.tsv', 'w') as outfile:
+with open('hearthpwn.txt', 'w') as outfile:
   for card, id in card_map.items():
     outfile.write('%s %s\n' % (card, id)) 
 
